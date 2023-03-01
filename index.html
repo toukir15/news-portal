@@ -9,6 +9,11 @@
     , initial-scale=1.0"
     />
     <title>News Portal</title>
+    <!-- font awesome  -->
+    <script
+      src="https://kit.fontawesome.com/39749765a9.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- daisy ui link  -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@2.51.2/dist/full.css"
@@ -90,12 +95,45 @@
 
     <!-- main section start  -->
     <main class="w-3/4 mx-auto">
+      <!-- items and category  -->
       <section class="py-6 pl-4 bg-white">
         <p>
           <span id="category__items">0</span> items found for category
           <span id="category__name"></span>
         </p>
       </section>
+
+      <section class="flex justify-between py-8 items-center">
+        <div class="flex">
+          <p class="w16 flex items-center">Sort By View:</p>
+
+          <!-- todays pick and trending section -->
+          <select class="select select-secondary w-2/4 mx-4 max-w-xs">
+            <option disabled selected>Pick your favorite language</option>
+            <option>Java</option>
+            <option>Go</option>
+            <option>C</option>
+            <option>C#</option>
+            <option>C++</option>
+            <option>Rust</option>
+            <option>JavaScript</option>
+            <option>Python</option>
+          </select>
+        </div>
+        <div>
+          <button class="bg-blue-600 text-white py-2 px-4 rounded">
+            Today’s Pick
+          </button>
+          <button class="border border-blue-600 py-2 px-4 rounded">
+            Trending
+          </button>
+        </div>
+      </section>
+
+      <!-- card section  -->
+      <section id="card__container"></section>
+
+      <!-- modal section  -->
     </main>
     <!-- main section end -->
 
